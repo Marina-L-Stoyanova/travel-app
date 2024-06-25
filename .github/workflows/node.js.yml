@@ -37,7 +37,7 @@ jobs:
     - run: npm run build
     - run: npm run test -- --watch=false --browsers ChromeHeadless
 
-    deploy:
+  deploy:
 
     runs-on: ubuntu-latest
 
