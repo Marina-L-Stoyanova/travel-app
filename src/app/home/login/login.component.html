@@ -1,0 +1,43 @@
+<div class="row-layout left">
+  <div class="column-layout group">
+    <img src="/assets/Travel-App-Color-Logo.svg" class="image" />
+    <div class="column-layout group_1">
+      <h5 class="h5">
+        Login
+      </h5>
+      <p class="ig-typography__body-2 text">
+        Please, login so you can access all applications features.
+      </p>
+    </div>
+    <div class="column-layout group_2">
+      <igx-input-group type="box" class="input">
+        <input type="email" placeholder="myname@website.com" igxInput />
+        <label igxLabel>Email address</label>
+      </igx-input-group>
+      <igx-input-group type="box" class="input">
+        <input type="password" placeholder="Min 8 characters" igxInput />
+        <label igxLabel>Password</label>
+      </igx-input-group>
+      <div class="row-layout group_3">
+        <igx-checkbox labelPosition="after" [(ngModel)]="checked" class="checkbox">
+          Remember me
+        </igx-checkbox>
+        <a target="_self" routerLink="/home/reset-password" class="ig-typography__body-2 hyperlink">
+          Forgot password?
+        </a>
+      </div>
+    </div>
+    <div class="column-layout group_4">
+      <button igxButton="contained" igxRipple routerLink="/in-app/dashboard" class="button">
+        LOGIN
+      </button>
+      <div class="row-layout group_5"></div>
+      <button igxButton="outlined" igxRipple routerLink="/home/sign-up" class="button_1">
+        Don't have a registration? Sign up now!
+      </button>
+    </div>
+  </div>
+</div>
+<div class="row-layout right">
+  <img src="/assets/SignIn.jpg" class="image_1" />
+</div>

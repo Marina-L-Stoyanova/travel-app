@@ -1,0 +1,199 @@
+<div class="row-layout all-articles">
+  <div class="column-layout group">
+    <h6 class="h6">
+      All articles
+    </h6>
+    <div class="row-layout group_1">
+      <igx-card *ngFor="let item of travelAppDataArticlesSource1" class="card">
+        <igx-card-media height="240px" class="media-content">
+          <img [src]="item.image_url" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            {{ item.title }}
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <p class="ig-typography__body-2 text">
+            {{ item.subtitle }}
+          </p>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="flat" igxRipple class="button">
+              READ
+            </button>
+          </ng-container>
+          <ng-container igxEnd>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                favorite
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                share
+              </igx-icon>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+      <igx-card *ngFor="let item of travelAppDataArticlesSource2" class="card">
+        <igx-card-media height="240px" class="media-content">
+          <img [src]="item.image_url" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            {{ item.title }}
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <p class="ig-typography__body-2 text">
+            {{ item.subtitle }}
+          </p>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="flat" igxRipple class="button">
+              READ
+            </button>
+          </ng-container>
+          <ng-container igxEnd>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                favorite
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                bookmark
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                share
+              </igx-icon>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+      <igx-card *ngFor="let item of travelAppDataArticlesSource3" class="card">
+        <igx-card-media height="240px" class="media-content">
+          <img [src]="item.image_url" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            {{ item.title }}
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <p class="ig-typography__body-2 text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="flat" igxRipple class="button">
+              READ
+            </button>
+          </ng-container>
+          <ng-container igxEnd>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                favorite
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                share
+              </igx-icon>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+      <igx-card *ngFor="let item of travelAppDataArticlesSource4" class="card">
+        <igx-card-media height="240px" class="media-content">
+          <img [src]="item.image_url" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            {{ item.title }}
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <p class="ig-typography__body-2 text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="flat" igxRipple class="button">
+              READ
+            </button>
+          </ng-container>
+          <ng-container igxEnd>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                favorite
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat" class="icon-button">
+              <igx-icon class="icon">
+                share
+              </igx-icon>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+    </div>
+  </div>
+</div>
+<div class="column-layout recommended">
+  <div class="column-layout group_2">
+    <h6 class="h6">
+      Recommended
+    </h6>
+    <div class="column-layout group_3">
+      <igx-card *ngFor="let item of travelAppDataSelectedArticles" class="card_1">
+        <igx-card-media height="160px" class="media-content_1">
+          <img [src]="item.image_url" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            {{ item.title }}
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            {{ item.subtitle }}
+          </h5>
+        </igx-card-header>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="flat" igxRipple class="button">
+              Read
+            </button>
+          </ng-container>
+          <ng-container igxEnd>
+            <button igxRipple igxIconButton="flat">
+              <igx-icon>
+                bookmark_border
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat">
+              <igx-icon>
+                share
+              </igx-icon>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+    </div>
+  </div>
+</div>

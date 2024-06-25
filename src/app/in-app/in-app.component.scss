@@ -1,0 +1,84 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  background-color: hsla(var(--ig-gray-900));
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.group_1 {
+  background-color: hsla(var(--ig-surface-500));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  padding: 8px 16px;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_2 {
+  background-color: hsla(var(--ig-gray-900));
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  padding: 8px 16px;
+  min-width: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.icon-button {
+  --igx-button-foreground: hsla(var(--ig-surface-500));
+}
+.image {
+  object-fit: cover;
+  width: 160px;
+  min-width: 0;
+  min-height: 0;
+  max-width: 160px;
+  flex-shrink: 0;
+}
+.icon {
+  color: hsla(var(--ig-surface-500));
+}
+.avatar {
+  --igx-avatar-background: transparent;
+}
+.text {
+  color: hsla(var(--ig-gray-200));
+  height: max-content;
+  min-width: min-content;
+}
+.icon_1 {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.nav-drawer {
+  min-width: min-content;
+  min-height: 0;
+  max-width: 320px;
+  flex-shrink: 0;
+}
+.view-container {
+  overflow: auto;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+}

@@ -1,0 +1,131 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.all-articles {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  min-width: 480px;
+  min-height: 50px;
+  flex-grow: 3;
+  flex-basis: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  background-color: hsla(var(--ig-gray-100));
+  z-index: 1;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  overflow: auto;
+  position: sticky;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_1 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  padding: 0 0 16px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.card {
+  height: max-content;
+  min-width: 280px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.recommended {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  min-width: 280px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_2 {
+  background-color: hsla(var(--ig-gray-200));
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  overflow: auto;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_3 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  overflow: auto;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.card_1 {
+  height: max-content;
+}
+.h6 {
+  height: max-content;
+}
+.image {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+}
+.icon {
+  color: hsla(var(--ig-secondary-500));
+}
+.media-content {
+  min-height: 240px;
+  max-height: 240px;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.icon-button {
+  --igx-button-foreground: hsla(var(--ig-secondary-500));
+}
+.media-content_1 {
+  min-height: 160px;
+  max-height: 160px;
+}
+.button {
+  --igx-button-foreground: hsla(var(--ig-gray-900));
+  height: max-content;
+}

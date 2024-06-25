@@ -1,0 +1,69 @@
+<div class="row-layout group">
+  <div class="row-layout group_1">
+    <button igxRipple igxIconButton="flat" [igxToggleAction]="navDrawer">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+    <img src="/assets/Travel-App-Color-Logo.svg" class="image" />
+  </div>
+  <div class="row-layout group_2">
+    <button igxRipple igxIconButton="flat" class="icon-button">
+      <igx-icon class="icon">
+        notifications
+      </igx-icon>
+    </button>
+    <button igxRipple igxIconButton="flat" class="icon-button">
+      <igx-icon class="icon">
+        search
+      </igx-icon>
+    </button>
+    <igx-avatar src="/assets/Avatar2.png" shape="circle" class="avatar"></igx-avatar>
+    <p class="ig-typography__body-2 text">
+      Sarah W.
+    </p>
+  </div>
+</div>
+<igx-nav-drawer [pinThreshold]="0" width="320px" #navDrawer class="nav-drawer">
+  <ng-template igxDrawer>
+    <div igxDrawerItem igxRipple routerLink="/in-app/dashboard">
+      <igx-icon class="icon_1">
+        dashboard
+      </igx-icon>
+      <span>Dashboard</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/in-app/discover">
+      <igx-icon class="icon_1">
+        image_search
+      </igx-icon>
+      <span>Discover</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/in-app/travel-lists">
+      <igx-icon class="icon_1">
+        playlist_add_check
+      </igx-icon>
+      <span>Travel lists</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/in-app/articles">
+      <igx-icon class="icon_1">
+        chrome_reader_mode
+      </igx-icon>
+      <span>Articles</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/in-app/faq">
+      <igx-icon class="icon_1">
+        question_answer
+      </igx-icon>
+      <span>FAQ</span>
+    </div>
+    <div igxDrawerItem igxRipple>
+      <igx-icon class="icon_1">
+        settings
+      </igx-icon>
+      <span>Settings</span>
+    </div>
+  </ng-template>
+</igx-nav-drawer>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
